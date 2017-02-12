@@ -1,0 +1,70 @@
+<div class="js-sidebar-content">
+  <header class="logo hidden-sm-down">
+    <a [routerLink]=" ['/admin/home'] ">{{config.name}}</a>
+  </header>
+  <div class="sidebar-status hidden-md-up">
+  </div>
+  <!-- main notification links are placed inside of .sidebar-nav -->
+  <ul class="sidebar-nav">
+        <li>
+      <a class="collapsed" data-target="#sidebar-dashboard" data-toggle="collapse" data-parent="#sidebar">
+          <span class="icon">
+            <i class="fa fa-server"></i>
+          </span>
+        Dashboard
+        <i class="toggle fa fa-angle-down"></i>
+      </a>
+      <ul id="sidebar-dashboard" class="collapse">
+        <li><a [routerLink]=" ['/admin/dashboard'] ">General</a></li>
+      </ul>
+    </li>
+    <li>
+      <a class="collapsed" data-target="#sidebar-destination" data-toggle="collapse" data-parent="#sidebar">
+          <span class="icon">
+            <i class="fa fa-server"></i>
+          </span>
+        Destinos
+        <i class="toggle fa fa-angle-down"></i>
+      </a>
+      <ul id="sidebar-destination" class="collapse">
+        <li><a [routerLink]=" ['/admin/destination'] ">General</a></li>
+      </ul>
+    </li>
+     <li>
+      <a class="collapsed" data-target="#sidebar-itinerary" data-toggle="collapse" data-parent="#sidebar">
+          <span class="icon">
+            <i class="fa fa-server"></i>
+          </span>
+        Itinerario
+        <i class="toggle fa fa-angle-down"></i>
+      </a>
+      <ul id="sidebar-itinerary" class="collapse">
+        <li><a [routerLink]=" ['/admin/itinerary'] ">General</a></li>
+      </ul>
+    </li>
+         <li>
+      <a class="collapsed" data-target="#sidebar-agency" data-toggle="collapse" data-parent="#sidebar">
+          <span class="icon">
+            <i class="fa fa-server"></i>
+          </span>
+        Agencias
+        <i class="toggle fa fa-angle-down"></i>
+      </a>
+      <ul id="sidebar-agency" class="collapse">
+        <li><a [routerLink]=" ['/admin/agency'] ">General</a></li>
+      </ul>
+    </li>
+    <li>
+      <a class="collapsed" data-target="#sidebar-service" data-toggle="collapse" data-parent="#sidebar">
+          <span class="icon">
+            <i class="fa fa-server"></i>
+          </span>
+        Servicios
+        <i class="toggle fa fa-angle-down"></i>
+      </a>
+      <ul id="sidebar-service" class="collapse">
+        <li><a [routerLink]=" ['/admin/service'] ">General</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
